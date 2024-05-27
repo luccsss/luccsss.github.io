@@ -3,36 +3,18 @@ body{
     font-family: Arial, sans-serif;    
     margin: 0px;
     padding: 0px;
-    @media (min-width: 992px) {
-        .column{
-            width: 30%;
-        }
-        div{
-            margin-left: 3%;
-        }
-    }
-    @media (min-width: 768px) and (max-width: 991px) {
-        .column{
-            position: relative;  
-            width: 45%;            
-        }
-        div{
-            margin-left: 5%;
-        }
-        #Clast{
-            width: 93%;
-        }
-    }
-    @media (max-width: 767px) {
-        .column{
-            width: 80%;
-            position: relative;
-        }
-        div{
-            margin-left: 15%;
-        }
-    }
-}        
+}
+header{
+    background-color: #c66868;
+    color: #fff;
+    padding: 10px 0px;
+    margin: 0px;
+    text-align: center;
+}
+header div ul{
+    position: relative;
+    list-style: none;
+}
     h1{
         text-align: center;        
         margin-top: 5%;
@@ -72,3 +54,58 @@ body{
     .menu3{
         background-color: #E5D099;
     }
+    .Clast{
+        margin-right: 0px;
+    }
+    #sections{
+        margin-left: 4%;
+        justify-content: center;
+        margin-right: 4%;
+    }
+/* Desktop version */
+@media (min-width: 992px) {
+    .column{
+        width: 30%;
+    }
+    div{        
+        display: flex;
+        margin-left: 3%;
+    }
+}
+/* Tablet version */
+@media (min-width: 768px) and (max-width: 991px) {
+    .column{
+        position: flex;  
+        width: 47%;
+        margin-right: 6%;
+        justify-content: center;  
+        align-items: center;          
+    }
+    #column2{
+        margin-right: 0%;
+    }
+    #sections{
+        margin-left:  5% 5%; 
+    }
+    .Clast{
+        width: 100%;
+        margin-right: 0%;
+    }
+}
+/* Mobile version */
+@media (max-width: 767px) {
+    .column{
+        align-items: center;
+        justify-content: center;
+        margin-right: 0%;
+        width: 80%;
+        position: relative;
+    }
+    #sections{
+        justify-content: center;
+        margin-left: 15%;
+        margin-right: 0%;
+        align-items: center;
+        display: block;
+    }
+}        
