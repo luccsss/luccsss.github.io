@@ -79,7 +79,7 @@ header nav div {
     }  
 }
 /* Tablet version */
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 992px) {
     .column{
         position: flex;  
         width: 47%;
@@ -102,7 +102,7 @@ header nav div {
     }
 }
 /* Mobile version */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .column{
         align-items: center;
         justify-content: center;
