@@ -3,35 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
     <title>Assignment Solution for Module 3</title>
 </head>
 <body>
     <header>
-        <nav>
-            <div class="navbar-hearder">
+        <nav id="header-nav" class="navbar navbar-default">
+            <div class="navbar-header">
                 <h1><b>Food, LLC</b></h1>
-                <button id="navbarToggle" type="button" class="navbar-toggle collapsed" data-toggle="collapsable-nav" aria-expanded="false" >
+                <button type="button" id="navbarToggle" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav">
                     <span class="glyphicon glyphicon-menu-hamburger"></span>
                 </button>
             </div>
-            
-            <div id="collapsable-nav" class="topics navbar-collapse collapse" aria-expanded="false">
-                <div class="visible-xs barra">
-                    <ul>
-                        <li><a href="#">Chicken</a></li>
-                        <li><a href="#">Beef</a></li>
-                        <li><a href="#">Sushi</a></li>
-                    </ul>
-                </div>
+            <div id="collapsable-nav" class="navbar-collapse collapse">
+                <ul id="nav-list" class="nav navbar-nav">
+                    <li>
+                        <a href="index.html">Chicken</a>
+                    </li>
+                    <li>
+                        <a href="index.html">Beef</a>
+                    </li>
+                    <li>
+                        <a href="index.html">Sushi</a>
+                    </li>
+                </ul>
             </div>
-
         </nav>
     </header>
     <h1 class="text-center"><b>Our Menu</b></h1>
-    <div id="sections" class="row">
+    <div id="sections" class="row container-fluid">
         <section class="column">
             <h2 id="menu1">Chicken</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien fermentum aliquam. Nullam nec nunc nec nunc. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat facere obcaecati, minima similique autem accusantium dolores cupiditate natus, aperiam voluptatem numquam aut. Earum sapiente, sed aut voluptatibus dicta aperiam assumenda!</p>
@@ -47,5 +48,8 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien fermentum aliquam. Nullam nec nunc nec nunc. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat facere obcaecati, minima similique autem accusantium dolores cupiditate natus, aperiam voluptatem numquam aut. Earum sapiente, sed aut voluptatibus dicta aperiam assumenda!</p>
         </section>
     </div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.js"></script>
 </body>
 </html>
