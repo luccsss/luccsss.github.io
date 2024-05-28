@@ -10,34 +10,41 @@
 </head>
 <body>
     <header>
-        <div>
-            <h1 >Food, LLC</h1>
-        </div>
-        <div>
-            <nav>
-                <ul>
-                    <li><a href="#">Chicken</a></li>
-                    <li><a href="#">Beef</a></li>
-                    <li><a href="#">Sushi</a></li>
-                </ul>
-            </nav>
-        </div>
+        <nav>
+            <div class="navbar-hearder">
+                <h1><b>Food, LLC</b></h1>
+                <button id="navbarToggle" type="button" class="navbar-toggle collapsed" data-toggle="collapsable-nav" aria-expanded="false" >
+                    <span class="glyphicon glyphicon-menu-hamburger"></span>
+                </button>
+            </div>
+            
+            <div id="collapsable-nav" class="topics navbar-collapse collapse" aria-expanded="false">
+                <div class="visible-xs barra">
+                    <ul>
+                        <li><a href="#">Chicken</a></li>
+                        <li><a href="#">Beef</a></li>
+                        <li><a href="#">Sushi</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
     </header>
-    <h1>Our Menu</h1>
+    <h1 class="text-center"><b>Our Menu</b></h1>
     <div id="sections" class="row">
         <section class="column">
-            <h2 class="menu1">Chicken</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien fermentum aliquam. Nullam nec nunc nec nunc.</p>
+            <h2 id="menu1">Chicken</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien fermentum aliquam. Nullam nec nunc nec nunc. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat facere obcaecati, minima similique autem accusantium dolores cupiditate natus, aperiam voluptatem numquam aut. Earum sapiente, sed aut voluptatibus dicta aperiam assumenda!</p>
         </section>
         
         <section class="column" id="column2">
-            <h2 class="menu2">Beef</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien fermentum aliquam. Nullam nec nunc nec nunc.</p>
+            <h2 id="menu2">Beef</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien fermentum aliquam. Nullam nec nunc nec nunc. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat facere obcaecati, minima similique autem accusantium dolores cupiditate natus, aperiam voluptatem numquam aut. Earum sapiente, sed aut voluptatibus dicta aperiam assumenda!</p>
         </section>
 
         <section class="column Clast">
-            <h2 class="menu3">Sushi</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien fermentum aliquam. Nullam nec nunc nec nunc.</p>
+            <h2 id="menu3">Sushi</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien fermentum aliquam. Nullam nec nunc nec nunc. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat facere obcaecati, minima similique autem accusantium dolores cupiditate natus, aperiam voluptatem numquam aut. Earum sapiente, sed aut voluptatibus dicta aperiam assumenda!</p>
         </section>
     </div>
 </body>

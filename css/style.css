@@ -7,18 +7,16 @@ body{
 header{
     background-color: #c66868;
     color: #fff;
-    padding: 10px 0px;
+    padding: 12px;
     margin: 0px;
-    text-align: center;
+    text-align: left;
 }
-header div ul{
+header nav div {
     position: relative;
-    list-style: none;
+    display: flex;
 }
-    h1{
-        text-align: center;        
-        margin-top: 5%;
-        margin-bottom: 8%;
+    h1{      
+        margin: 20px;
     }
     .column { 
         float: left;
@@ -43,15 +41,15 @@ header div ul{
         text-align: justify;
     }
 
-    .menu1{
+    #menu1{
         background-color: #D59999;
 
     }
-    .menu2{
+    #menu2{
         background-color: #C14543;
         color: #ffffff;
     }
-    .menu3{
+    #menu3{
         background-color: #E5D099;
     }
     .Clast{
@@ -67,7 +65,7 @@ header div ul{
     .column{
         width: 30%;
     }
-    div{        
+    #sections{        
         display: flex;
         margin-left: 3%;
     }
@@ -91,6 +89,7 @@ header div ul{
         width: 100%;
         margin-right: 0%;
     }
+
 }
 /* Mobile version */
 @media (max-width: 767px) {
@@ -103,9 +102,40 @@ header div ul{
     }
     #sections{
         justify-content: center;
-        margin-left: 15%;
+        margin-left: 16%;
         margin-right: 0%;
         align-items: center;
         display: block;
+    }
+    #navbarToggle{
+        position: absolute;
+        bottom: 15px;
+        right: 15px;
+        display: block;
+        justify-content: end;
+        background-color: #c66868;
+        color: #fff;
+        padding: 8px 12px 8px 12px;
+        margin: 0px;
+        border: rgb(135, 56, 56) 2px solid;
+    }
+    #collapsable-nav a { /* Collapsed nav menu text */
+        font-size: 1.2em;
+    }
+    #collapsable-nav a span { /* Collapsed nav menu glyph */
+        font-size: 1em;
+        margin-right: 5px;
+    }
+    .barra ul{
+        text-decoration: none;
+            align-content: center;
+    justify-content: center;
+    }
+    #navbarToggle:hover{
+        background-color: #aa5656;
+        #collapsable-nav a:hover{
+            display: block;
+        }
+        
     }
 }        
