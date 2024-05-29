@@ -72,7 +72,7 @@ header nav div {
     }
     #sections{        
         display: flex;
-        margin-left: 3%;
+        margin-left: 4%;
     }  
     .navbar-nav{
         display: none;
@@ -137,6 +137,7 @@ header nav div {
         margin-right: 5px;
     }
     #nav-list{
+        margin: auto;
         margin-top: 10px;
     }
     #nav-list a{
@@ -146,11 +147,23 @@ header nav div {
         background-color: #c66868;
         color: #fff;
     }
+    
+    #collapsable-nav{
+        padding: 0px;
+    }
     #nav-list a {
         font-size: 1.2em;
     }
     #nav-list a:hover, 
     #navbarToggle:hover { 
     background-color: #aa5656;
+    }
+    ul {
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    ul li{
+        width: 100%;
     }
 }        
