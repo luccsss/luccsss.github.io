@@ -26,9 +26,7 @@ ajaxUtils.sendGetRequest =
     var request = getRequestObject();
     request.onreadystatechange = 
       function() { 
-        handleResponse(request, 
-                       responseHandler,
-                       isJsonResponse); 
+        handleResponse(request, responseHandler,isJsonResponse); 
       };
     request.open("GET", requestUrl, true);
     request.send(null); // for POST only
@@ -42,7 +40,7 @@ function handleResponse(request,
                         responseHandler,
                         isJsonResponse) {
   if ((request.readyState == 4) &&
-     (request.status == 200)) {
+    (request.status == 200)) {
 
     // Default to isJsonResponse = true
     if (isJsonResponse == undefined) {
